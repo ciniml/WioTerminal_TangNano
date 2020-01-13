@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GW1N-4-LQ100
+D GOWIN LittleBee GW1N-4
+K GOWIN LittleBee GW1N FPGA
+$ENDCMP
+#
+#End Doc Library
