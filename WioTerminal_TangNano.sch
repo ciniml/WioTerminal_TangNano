@@ -369,80 +369,12 @@ RXD
 Text Label 8450 5100 0    50   ~ 0
 TXD
 $Comp
-L Connector:Conn_01x04_Male J4
-U 1 1 5EDC2B88
-P 9200 6000
-F 0 "J4" H 9173 5973 50  0000 R CNN
-F 1 "GROVE" H 9173 5882 50  0000 R CNN
-F 2 "local:PHS-4AW" H 9200 6000 50  0001 C CNN
-F 3 "~" H 9200 6000 50  0001 C CNN
-	1    9200 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C13
-U 1 1 5EDC2B8F
-P 8300 6200
-F 0 "C13" H 8392 6246 50  0000 L CNN
-F 1 "1u" H 8392 6155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 6200 50  0001 C CNN
-F 3 "~" H 8300 6200 50  0001 C CNN
-	1    8300 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5EDC2B96
-P 8300 6300
-F 0 "#PWR030" H 8300 6050 50  0001 C CNN
-F 1 "GND" H 8305 6127 50  0000 C CNN
-F 2 "" H 8300 6300 50  0001 C CNN
-F 3 "" H 8300 6300 50  0001 C CNN
-	1    8300 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR036
-U 1 1 5EDC2B9C
-P 9000 6300
-F 0 "#PWR036" H 9000 6050 50  0001 C CNN
-F 1 "GND" H 9005 6127 50  0000 C CNN
-F 2 "" H 9000 6300 50  0001 C CNN
-F 3 "" H 9000 6300 50  0001 C CNN
-	1    9000 6300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 6100 8300 6100
-Wire Wire Line
-	9000 6200 9000 6300
-$Comp
-L power:+3V3 #PWR017
-U 1 1 5EDC2BA4
-P 8300 6100
-F 0 "#PWR017" H 8300 5950 50  0001 C CNN
-F 1 "+3V3" H 8315 6273 50  0000 C CNN
-F 2 "" H 8300 6100 50  0001 C CNN
-F 3 "" H 8300 6100 50  0001 C CNN
-	1    8300 6100
-	1    0    0    -1  
-$EndComp
-Connection ~ 8300 6100
-Wire Wire Line
-	9000 6000 8450 6000
-Wire Wire Line
-	8450 5900 9000 5900
-Text Label 8450 6000 0    50   ~ 0
-I2C1_SCL
-Text Label 8450 5900 0    50   ~ 0
-I2C1_SDA
-$Comp
 L Connector_Generic:Conn_01x20 J2
 U 1 1 5EE60003
 P 1850 5350
 F 0 "J2" H 1700 6400 50  0000 L CNN
 F 1 "TangNano_Left" H 1650 6500 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 1850 5350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 1850 5350 50  0001 C CNN
 F 3 "~" H 1850 5350 50  0001 C CNN
 	1    1850 5350
 	1    0    0    1   
@@ -453,7 +385,7 @@ U 1 1 5EE6025C
 P 2550 5350
 F 0 "J6" H 2100 6400 50  0000 L CNN
 F 1 "TangNano_Right" H 2050 6500 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical" H 2550 5350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 2550 5350 50  0001 C CNN
 F 3 "~" H 2550 5350 50  0001 C CNN
 	1    2550 5350
 	-1   0    0    1   
@@ -464,7 +396,7 @@ U 1 1 5EE67A12
 P 1900 3950
 F 0 "J5" V 2000 3800 50  0000 L CNN
 F 1 "TangNano_JTAG_L" V 2100 3800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 3950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1900 3950 50  0001 C CNN
 F 3 "~" H 1900 3950 50  0001 C CNN
 	1    1900 3950
 	0    1    1    0   
@@ -475,7 +407,7 @@ U 1 1 5EE67C41
 P 2600 3950
 F 0 "J7" V 2700 3800 50  0000 L CNN
 F 1 "TangNano_JTAG_R" V 2800 3800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2600 3950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2600 3950 50  0001 C CNN
 F 3 "~" H 2600 3950 50  0001 C CNN
 	1    2600 3950
 	0    1    1    0   
@@ -1073,24 +1005,8 @@ Text Label 3500 5100 0    50   ~ 0
 IOB16A
 Text Label 3500 5400 0    50   ~ 0
 IOB16B
-NoConn ~ 3200 5150
-NoConn ~ 3200 5250
-NoConn ~ 3200 5350
-NoConn ~ 3200 5450
-NoConn ~ 3200 4850
 NoConn ~ 3200 4350
 NoConn ~ 1200 4350
-NoConn ~ 1200 4750
-NoConn ~ 1200 4950
-NoConn ~ 1200 5050
-NoConn ~ 1200 5550
-NoConn ~ 1200 5650
-NoConn ~ 1200 5750
-NoConn ~ 1200 5850
-NoConn ~ 1200 5950
-NoConn ~ 1200 6050
-NoConn ~ 1200 6150
-NoConn ~ 1200 6250
 $Comp
 L power:+5V #PWR0102
 U 1 1 5F182A32
@@ -1387,10 +1303,10 @@ I2C0_SDA
 Text Label 12850 4000 2    50   ~ 0
 I2C0_SCL
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0103
 U 1 1 5F215B65
 P 3200 4650
-F 0 "#PWR?" H 3200 4500 50  0001 C CNN
+F 0 "#PWR0103" H 3200 4500 50  0001 C CNN
 F 1 "+3V3" H 3200 4800 31  0000 C CNN
 F 2 "" H 3200 4650 50  0001 C CNN
 F 3 "" H 3200 4650 50  0001 C CNN
@@ -1398,14 +1314,115 @@ F 3 "" H 3200 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0104
 U 1 1 5F215DEF
 P 3200 4750
-F 0 "#PWR?" H 3200 4600 50  0001 C CNN
+F 0 "#PWR0104" H 3200 4600 50  0001 C CNN
 F 1 "+3V3" H 3250 4900 31  0000 C CNN
 F 2 "" H 3200 4750 50  0001 C CNN
 F 3 "" H 3200 4750 50  0001 C CNN
 	1    3200 4750
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector_Generic:Conn_01x18 J4
+U 1 1 5F223411
+P 1200 7950
+F 0 "J4" H 1120 6825 50  0000 C CNN
+F 1 "Conn_01x18" H 1120 6916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x09_P2.54mm_Horizontal" H 1200 7950 50  0001 C CNN
+F 3 "~" H 1200 7950 50  0001 C CNN
+	1    1200 7950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 7050 1900 7050
+Wire Wire Line
+	1400 7150 1900 7150
+Wire Wire Line
+	1400 7250 1900 7250
+Wire Wire Line
+	1400 7350 1900 7350
+Wire Wire Line
+	1400 7450 1900 7450
+Wire Wire Line
+	1400 7550 1900 7550
+Wire Wire Line
+	1400 7650 1900 7650
+Wire Wire Line
+	1400 7750 1900 7750
+Wire Wire Line
+	1400 7850 1900 7850
+Wire Wire Line
+	1400 7950 1900 7950
+Wire Wire Line
+	1400 8050 1900 8050
+Wire Wire Line
+	1400 8150 1900 8150
+Wire Wire Line
+	1400 8250 1900 8250
+Wire Wire Line
+	1400 8350 1900 8350
+Wire Wire Line
+	1400 8450 1900 8450
+Wire Wire Line
+	1400 8550 1900 8550
+Wire Wire Line
+	1400 8650 1900 8650
+Wire Wire Line
+	1400 8750 1900 8750
+$Comp
+L power:+3V3 #PWR04
+U 1 1 5F33870B
+P 1900 7050
+F 0 "#PWR04" H 1900 6900 50  0001 C CNN
+F 1 "+3V3" V 1900 7200 31  0000 C CNN
+F 2 "" H 1900 7050 50  0001 C CNN
+F 3 "" H 1900 7050 50  0001 C CNN
+	1    1900 7050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5F3387BB
+P 1900 7150
+F 0 "#PWR012" H 1900 6900 50  0001 C CNN
+F 1 "GND" H 1900 7000 31  0000 C CNN
+F 2 "" H 1900 7150 50  0001 C CNN
+F 3 "" H 1900 7150 50  0001 C CNN
+	1    1900 7150
+	0    -1   -1   0   
+$EndComp
+Text Label 1900 7950 2    50   ~ 0
+G2
+Text Label 1900 7850 2    50   ~ 0
+G1
+Text Label 1900 7750 2    50   ~ 0
+G0
+Text Label 1900 7650 2    50   ~ 0
+R4
+Text Label 1900 7550 2    50   ~ 0
+R3
+Text Label 1900 7450 2    50   ~ 0
+R2
+Text Label 1900 7350 2    50   ~ 0
+R1
+Text Label 1900 7250 2    50   ~ 0
+R0
+Text Label 1900 8150 2    50   ~ 0
+IOB14B
+Text Label 1900 8050 2    50   ~ 0
+IOB14A
+Text Label 1900 8250 2    50   ~ 0
+IOV11A
+Text Label 1900 8450 2    50   ~ 0
+LCD_DE
+Text Label 1900 8550 2    50   ~ 0
+LCD_VSYNC
+Text Label 1900 8650 2    50   ~ 0
+LCD_HSYNC
+Text Label 1900 8750 2    50   ~ 0
+LCD_CLK
+Text Label 1900 8350 2    50   ~ 0
+IOB3A
 $EndSCHEMATC
