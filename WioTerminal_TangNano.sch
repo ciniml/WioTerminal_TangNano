@@ -5,9 +5,9 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "M5Stack FPGA Stack"
-Date "2020-04-29"
-Rev "Rev.C"
+Title "Wio Terminal Tang Nano Adapter"
+Date "2020-07-13"
+Rev "Rev.B"
 Comp "Kenta IDA"
 Comment1 ""
 Comment2 ""
@@ -621,19 +621,6 @@ F 3 "" H 3200 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:HDMI_A J?
-U 1 1 5EF209B0
-P 8800 2150
-AR Path="/5EEECD91/5EF209B0" Ref="J?"  Part="1" 
-AR Path="/5EF209B0" Ref="J8"  Part="1" 
-F 0 "J8" H 9229 2196 50  0000 L CNN
-F 1 "HDMI_A" H 9229 2105 50  0000 L CNN
-F 2 "local:SOFNG-HDMI-519" H 8825 2150 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/HDMI" H 8825 2150 50  0001 C CNN
-	1    8800 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5EF209B8
 P 8800 950
@@ -816,7 +803,6 @@ F 3 "~" H 9100 1050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9100 1050 8800 1050
-Connection ~ 8800 1050
 NoConn ~ 8400 2250
 NoConn ~ 8400 2450
 NoConn ~ 8400 2550
@@ -1425,4 +1411,16 @@ Text Label 1900 8750 2    50   ~ 0
 LCD_CLK
 Text Label 1900 8350 2    50   ~ 0
 IOB3A
+$Comp
+L Connector:HDMI_C_1.3 J8
+U 1 1 5F0B14B9
+P 8800 2150
+F 0 "J8" H 9230 2196 50  0000 L CNN
+F 1 "HDMI_C_1.3" H 9230 2105 50  0000 L CNN
+F 2 "local:SOFNG-HDMI-519" H 8825 2150 50  0001 C CNN
+F 3 "http://pinoutguide.com/PortableDevices/mini_hdmi_pinout.shtml" H 8825 2150 50  0001 C CNN
+	1    8800 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8800 1050
 $EndSCHEMATC
